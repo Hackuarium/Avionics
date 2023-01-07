@@ -24,7 +24,7 @@ On top of an ESP32C3 board connect an **Extension Board**. Both of wich are powe
 
 ## Reference
 
-### Components:
+### Components and features:
 
 - ESP32C3 from seeed https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
 - Accelererometer GY521, MPU6050:
@@ -34,6 +34,8 @@ On top of an ESP32C3 board connect an **Extension Board**. Both of wich are powe
   - https://www.diodes.com/assets/Datasheets/ZXMS6004FF.pdf
 - Barometric pressure sensor: MS5637
   - https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FMS5637-02BA03%7FB1%7Fpdf%7FEnglish%7FENG_DS_MS5637-02BA03_B1.pdf%7FCAT-BLPS0037
+- pins to connect servo
+- pins for testing
 
 ### Miscelaneous
 
