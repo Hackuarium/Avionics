@@ -7,6 +7,10 @@ Electronic design of an avionics for mini rockets.
   - Pressure (for altitude)
   - Video
 - Separation sequences (separation of stage 2, of nose, ...)
+  - 2-3 Pyro-channels
+  - 2-3 Servos control channels
+  - Electomagnets ?
+  - Valves ?
 ## Setup
 On top of an ESP32C3 board connect an **Extension Board**. Both of wich are powered by a mini lithium battery. Other battery for igniter (min 1.5v)
 ## Extension board for ESP32C3 (Micro Controler = µC)
@@ -20,7 +24,7 @@ On top of an ESP32C3 board connect an **Extension Board**. Both of wich are powe
 - Monitor battery voltage (voltage divider bridge with 2x 100 kohm)
 - Connexion for igniter of separation system
   - Know if an igniter is connected or not (VCC to Igniter to Transistor - connexion to GND with 1 mohm and connexion to I/O with 100 kohm)
- 
+- Strong connector to avoid unwanted disconnection
 
 ## Reference
 
