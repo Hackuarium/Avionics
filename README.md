@@ -42,6 +42,22 @@ On top of an ESP32C3 board connect an **Extension Board**. Both of wich are powe
 - pins to connect servo
 - pins for testing
 
+### ESP32 C3 pin mapping
+
+```
+#define D0 2
+#define D1 3
+#define D2 4
+#define D3 5
+#define D4 6
+#define D5 7
+#define D6 21
+#define D6 20
+#define D8 8
+#define D9 9
+#define D9 10
+```
+
 ### Miscelaneous
 
 - I2C protocol: https://en.wikipedia.org/wiki/I%C2%B2C
