@@ -1632,6 +1632,10 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 0e467118-de9f-4b16-850d-a8103c530925)
   )
+  (wire (pts (xy 275.59 165.1) (xy 280.67 165.1))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 0e6a3143-94be-4688-80a2-964861ac7ddd)
+  )
   (wire (pts (xy 53.975 260.985) (xy 61.595 260.985))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 0f70975a-52bf-4fa5-9923-8d9712e7e78a)
@@ -1739,6 +1743,10 @@
   (wire (pts (xy 93.98 234.95) (xy 93.98 253.365))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 3901b5cc-7a66-4bba-8e2d-8ee3060c5919)
+  )
+  (wire (pts (xy 288.29 165.1) (xy 294.64 165.1))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 39a6cdd1-00ca-4338-ba8b-6ada450a4029)
   )
   (wire (pts (xy 109.855 172.72) (xy 116.84 172.72))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -2008,6 +2016,10 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 9f985966-aaf8-4b11-91be-33fba89ee940)
   )
+  (wire (pts (xy 302.26 165.1) (xy 312.42 165.1))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 9fca526f-642f-48d2-8eab-28ca608a2f73)
+  )
   (wire (pts (xy 376.555 29.21) (xy 376.555 34.925))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid a3a25f64-4231-49a1-8ce4-549d21939279)
@@ -2115,6 +2127,10 @@
   (wire (pts (xy 258.445 261.62) (xy 261.62 261.62))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid ca68c0e5-794c-47ce-904b-1396b2c01788)
+  )
+  (wire (pts (xy 312.42 165.1) (xy 312.42 170.18))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid cb004543-0939-4687-adba-2a5c6a323c17)
   )
   (wire (pts (xy 69.215 115.57) (xy 69.215 123.19))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -2243,6 +2259,13 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 166516d9-cb29-42e3-98a3-5f0cdf138a34)
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 187.0588 147.2406 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "OUT4" (shape input) (at 275.59 165.1 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 1987d422-12ae-40dc-a2d8-8808c3eeac5d)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 268.3388 165.0206 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2584,7 +2607,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 66.675 234.95 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 05543cf1-c372-4ade-aa6a-9bc59abdadb7)
-    (property "Reference" "J1" (id 0) (at 65.405 226.695 0)
+    (property "Reference" "J3" (id 0) (at 65.405 226.695 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "QWIIC" (id 1) (at 64.135 229.235 0)
@@ -2788,7 +2811,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 102.87 234.95 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 2c6bf86c-04ac-4099-9761-ee12f928b38b)
-    (property "Reference" "J3" (id 0) (at 101.6 226.695 0)
+    (property "Reference" "J1" (id 0) (at 101.6 226.695 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "QWIIC" (id 1) (at 100.33 229.235 0)
@@ -2854,10 +2877,25 @@
     (pin "1" (uuid a0748e48-1073-4727-881c-d70792cf5205))
   )
 
+  (symbol (lib_id "Device:LED") (at 298.45 165.1 180) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 34d035c2-5e5d-4ab1-9431-b6626a2bde8c)
+    (property "Reference" "D4" (id 0) (at 300.0375 157.48 0))
+    (property "Value" "GREEN" (id 1) (at 300.0375 160.02 0))
+    (property "Footprint" "LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder" (id 2) (at 298.45 165.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 298.45 165.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4d42efcd-3f32-41ad-a8a7-c44556f67c73))
+    (pin "2" (uuid 1cee336b-070d-4b64-a4c1-ed21adce5fff))
+  )
+
   (symbol (lib_id "Driver_FET:BSP75N") (at 368.935 113.665 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 350ba192-d1eb-4b9b-8415-85b2c2124a8f)
-    (property "Reference" "Q4" (id 0) (at 370.205 104.775 0)
+    (property "Reference" "Q3" (id 0) (at 370.205 104.775 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BSP75N" (id 1) (at 360.045 104.775 0)
@@ -2971,10 +3009,10 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 381.635 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4c1c6da1-d950-43a7-adf7-82a69b02f249)
-    (property "Reference" "J12" (id 0) (at 384.175 26.6699 0)
+    (property "Reference" "J11" (id 0) (at 384.81 26.6699 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_01x02" (id 1) (at 384.175 29.2099 0)
+    (property "Value" "Conn_01x02" (id 1) (at 384.81 29.2099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" (id 2) (at 381.635 26.67 0)
@@ -2990,7 +3028,7 @@
   (symbol (lib_id "Device:LED") (at 318.77 90.805 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 510b5115-0370-4a82-8c4a-3f66b8879777)
-    (property "Reference" "D5" (id 0) (at 314.325 90.805 90)
+    (property "Reference" "D6" (id 0) (at 314.325 90.805 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED" (id 1) (at 313.055 92.71 90)
@@ -3192,6 +3230,22 @@
     (pin "2" (uuid 1729e6a4-dde0-4e58-b2d2-f58674d1fa73))
   )
 
+  (symbol (lib_id "power:GND") (at 312.42 170.18 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 6b7f6cc6-07b8-49ce-a5b3-f924236c9962)
+    (property "Reference" "#PWR0122" (id 0) (at 312.42 176.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 312.42 175.26 0))
+    (property "Footprint" "" (id 2) (at 312.42 170.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 312.42 170.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid aa589559-1889-4f16-8729-2cd397ed037d))
+  )
+
   (symbol (lib_id "Device:C") (at 102.235 105.41 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 6fadecc6-b496-4f14-bf3e-7e1eb31c4321)
@@ -3210,7 +3264,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 335.28 89.535 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 7458a4f4-810a-4719-be95-915cee1985b4)
-    (property "Reference" "J11" (id 0) (at 337.82 89.5349 0)
+    (property "Reference" "J12" (id 0) (at 337.82 89.5349 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x02" (id 1) (at 337.82 92.0749 0)
@@ -3376,6 +3430,21 @@
     (pin "3" (uuid 4b2030e5-125a-4f58-ba18-a8eb2ddbf20d))
     (pin "4" (uuid 9ee1e21e-1ccc-4741-bc37-125a5b57d56a))
     (pin "5" (uuid 003b6160-1ea7-4ac7-8bca-cd4f1eeade54))
+  )
+
+  (symbol (lib_id "Device:R") (at 284.48 165.1 90) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 9996c5ab-b6df-4dd8-b518-12cd361f7ed4)
+    (property "Reference" "R11" (id 0) (at 284.48 158.75 90))
+    (property "Value" "540" (id 1) (at 284.48 161.29 90))
+    (property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" (id 2) (at 284.48 166.878 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 284.48 165.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b4ca50b4-f191-49ad-974f-64c499718c4f))
+    (pin "2" (uuid 50b30330-0c6f-44af-a8d2-401c8345a09a))
   )
 
   (symbol (lib_id "Device:R") (at 166.37 72.39 0) (unit 1)
@@ -3561,7 +3630,7 @@
   (symbol (lib_id "Device:LED") (at 365.125 27.305 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b130194b-5976-4475-8904-3d335bedd832)
-    (property "Reference" "D6" (id 0) (at 360.68 27.305 90)
+    (property "Reference" "D5" (id 0) (at 360.68 27.305 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED" (id 1) (at 359.41 29.21 90)
@@ -3615,7 +3684,7 @@
   (symbol (lib_id "Device:R") (at 322.58 98.425 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b5e4354f-3da3-4b50-98bb-cc0311a7fb60)
-    (property "Reference" "R12" (id 0) (at 320.675 100.965 90))
+    (property "Reference" "R13" (id 0) (at 320.675 100.965 90))
     (property "Value" "1k" (id 1) (at 324.485 100.965 90))
     (property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" (id 2) (at 322.58 100.203 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -3630,7 +3699,7 @@
   (symbol (lib_id "Driver_FET:BSP75N") (at 368.935 50.8 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b9fed75d-a8ca-4630-b3af-0e09cf45af11)
-    (property "Reference" "Q3" (id 0) (at 370.205 41.91 0)
+    (property "Reference" "Q1" (id 0) (at 370.205 41.91 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BSP75N" (id 1) (at 360.045 41.91 0)
@@ -3703,7 +3772,7 @@
   (symbol (lib_id "Device:R") (at 368.935 34.925 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid c8ed621b-2a89-4a75-9331-8ab379452881)
-    (property "Reference" "R13" (id 0) (at 367.03 37.465 90))
+    (property "Reference" "R12" (id 0) (at 367.03 37.465 90))
     (property "Value" "1k" (id 1) (at 370.84 37.465 90))
     (property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" (id 2) (at 368.935 36.703 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -4001,6 +4070,9 @@
     (path "/33f5b88e-7a56-48df-b9d7-c451a834c938"
       (reference "#PWR0121") (unit 1) (value "GND") (footprint "")
     )
+    (path "/6b7f6cc6-07b8-49ce-a5b3-f924236c9962"
+      (reference "#PWR0122") (unit 1) (value "GND") (footprint "")
+    )
     (path "/86500c06-f715-4844-997c-74fe646968b5"
       (reference "#PWR0123") (unit 1) (value "GND") (footprint "")
     )
@@ -4043,10 +4115,13 @@
     (path "/10c502b3-3a18-4c22-ba4b-b4cb4c35433b"
       (reference "D3") (unit 1) (value "LED") (footprint "LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder")
     )
-    (path "/510b5115-0370-4a82-8c4a-3f66b8879777"
-      (reference "D5") (unit 1) (value "LED") (footprint "LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder")
+    (path "/34d035c2-5e5d-4ab1-9431-b6626a2bde8c"
+      (reference "D4") (unit 1) (value "GREEN") (footprint "LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder")
     )
     (path "/b130194b-5976-4475-8904-3d335bedd832"
+      (reference "D5") (unit 1) (value "LED") (footprint "LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder")
+    )
+    (path "/510b5115-0370-4a82-8c4a-3f66b8879777"
       (reference "D6") (unit 1) (value "LED") (footprint "LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder")
     )
     (path "/4a1a8396-28f6-487d-926c-814cc3796c15"
@@ -4064,13 +4139,13 @@
     (path "/a91d7aa1-40e6-4d73-9d47-789fc8e6e41e"
       (reference "H4") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_3.2mm_M3_ISO7380")
     )
-    (path "/05543cf1-c372-4ade-aa6a-9bc59abdadb7"
+    (path "/2c6bf86c-04ac-4099-9761-ee12f928b38b"
       (reference "J1") (unit 1) (value "QWIIC") (footprint "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal")
     )
     (path "/dc02e7ca-a78b-4ec9-ad7a-14025b261eef"
       (reference "J2") (unit 1) (value "QWIIC") (footprint "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal")
     )
-    (path "/2c6bf86c-04ac-4099-9761-ee12f928b38b"
+    (path "/05543cf1-c372-4ade-aa6a-9bc59abdadb7"
       (reference "J3") (unit 1) (value "QWIIC") (footprint "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal")
     )
     (path "/6115e745-366c-4a3b-8038-415ff1f7c8fa"
@@ -4091,10 +4166,10 @@
     (path "/bee7c87c-85a9-4c79-9283-69b0d517f24c"
       (reference "J9") (unit 1) (value "Conn_01x03") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
-    (path "/7458a4f4-810a-4719-be95-915cee1985b4"
+    (path "/4c1c6da1-d950-43a7-adf7-82a69b02f249"
       (reference "J11") (unit 1) (value "Conn_01x02") (footprint "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical")
     )
-    (path "/4c1c6da1-d950-43a7-adf7-82a69b02f249"
+    (path "/7458a4f4-810a-4719-be95-915cee1985b4"
       (reference "J12") (unit 1) (value "Conn_01x02") (footprint "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical")
     )
     (path "/acf31aa5-df73-4520-91b0-d549744e7795"
@@ -4103,14 +4178,14 @@
     (path "/01fa2a04-bc05-478d-a15d-fa035d52d7ba"
       (reference "J14") (unit 1) (value "BAT_CHARGE") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical")
     )
+    (path "/b9fed75d-a8ca-4630-b3af-0e09cf45af11"
+      (reference "Q1") (unit 1) (value "BSP75N") (footprint "Package_TO_SOT_SMD:SOT-223")
+    )
     (path "/521cdef5-5d04-4376-b227-1bb89aa93069"
       (reference "Q2") (unit 1) (value "BSP75N") (footprint "Package_TO_SOT_SMD:SOT-223")
     )
-    (path "/b9fed75d-a8ca-4630-b3af-0e09cf45af11"
-      (reference "Q3") (unit 1) (value "BSP75N") (footprint "Package_TO_SOT_SMD:SOT-223")
-    )
     (path "/350ba192-d1eb-4b9b-8415-85b2c2124a8f"
-      (reference "Q4") (unit 1) (value "BSP75N") (footprint "Package_TO_SOT_SMD:SOT-223")
+      (reference "Q3") (unit 1) (value "BSP75N") (footprint "Package_TO_SOT_SMD:SOT-223")
     )
     (path "/6564c794-5d3f-425b-a82a-023b3de2c58e"
       (reference "R1") (unit 1) (value "3.3k") (footprint "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder")
@@ -4142,10 +4217,13 @@
     (path "/7502309a-d726-469d-98e0-7876a4890ce5"
       (reference "R10") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder")
     )
-    (path "/b5e4354f-3da3-4b50-98bb-cc0311a7fb60"
-      (reference "R12") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder")
+    (path "/9996c5ab-b6df-4dd8-b518-12cd361f7ed4"
+      (reference "R11") (unit 1) (value "540") (footprint "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder")
     )
     (path "/c8ed621b-2a89-4a75-9331-8ab379452881"
+      (reference "R12") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder")
+    )
+    (path "/b5e4354f-3da3-4b50-98bb-cc0311a7fb60"
       (reference "R13") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder")
     )
     (path "/7ddf981b-5e1d-408b-86df-253e08d862f8"
