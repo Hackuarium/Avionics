@@ -31,7 +31,7 @@ On top of an ESP32C3 board connect an **Extension Board**. Both of wich are powe
 ### Components and features:
 
 - ESP32C3 from seeed https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
-![images/ESP32-C3_pin_map-2.png]
+![](images/ESP32-C3_pin_map-2.png)
 - Accelererometer GY521, MPU6050:
   - https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
   - https://parsippany.vidyalaya.org/fut102-gy521.pdf
