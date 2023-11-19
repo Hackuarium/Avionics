@@ -14,8 +14,6 @@
 
 #define PARAM_TIMEOUT 9  // J
 
-#define PARAM_SPEED 10  // K
-
 #define PARAM_UPTIME_H 20           // U
 #define PARAM_STATUS 21             // V
 #define PARAM_INT_TEMPERATURE_B 22  // W
@@ -50,3 +48,6 @@
 #define PARAM_OUT3_COLOR6 47  // AV
 #define PARAM_OUT3_COLOR7 48  // AW
 #define PARAM_OUT3_COLOR8 49  // AX
+
+#define PARAM_SPEED 50       // AY
+#define PARAM_BRIGHTNESS 51  // AZ

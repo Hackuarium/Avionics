@@ -43,9 +43,11 @@ void updateOutColors(uint8_t colors[8],
     Serial.println((int)(r1 * percent1 + r2 * percent2));
     */
 
-  setParameter(red, (int)(r1 * percent1 + r2 * percent2));
-  setParameter(green, (int)(g1 * percent1 + g2 * percent2));
-  setParameter(blue, (int)(b1 * percent1 + b2 * percent2));
+  float_t brightness = getParameter(PARAM_BRIGHTNESS) / 100.0;
+
+  setParameter(red, (int)((r1 * percent1 + r2 * percent2) * brightness));
+  setParameter(green, (int)((g1 * percent1 + g2 * percent2) * brightness));
+  setParameter(blue, (int)((b1 * percent1 + b2 * percent2) * brightness));
 }
 
 void updateColors() {

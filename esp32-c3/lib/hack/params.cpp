@@ -193,6 +193,7 @@ void resetParameters() {
   setAndSaveParameter(PARAM_OUT3_COLOR8, 0x00F);
 
   setAndSaveParameter(PARAM_SPEED, 50);
+  setAndSaveParameter(PARAM_BRIGHTNESS, 100);
 
   setQualifier(16961);
 }
