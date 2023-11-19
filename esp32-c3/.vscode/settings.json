@@ -1,0 +1,23 @@
+{
+  "files.associations": {
+    "random": "cpp",
+    "functional": "cpp",
+    "cmath": "cpp",
+    "atomic": "cpp",
+    "cstdint": "cpp",
+    "common.h": "c",
+    "cstdio": "cpp",
+    "*.tcc": "cpp",
+    "optional": "cpp",
+    "istream": "cpp",
+    "ostream": "cpp",
+    "system_error": "cpp",
+    "array": "cpp",
+    "regex": "cpp",
+    "tuple": "cpp",
+    "type_traits": "cpp",
+    "utility": "cpp"
+  },
+  "liveServer.settings.port": 5501,
+  "cmake.sourceDirectory": "/Users/lpatiny/git/hackuarium/esp32-c3/.pio/libdeps/lolin_c3_mini/Adafruit BusIO"
+}

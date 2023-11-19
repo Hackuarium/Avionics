@@ -1,63 +1,18 @@
-# Avionics
-Electronic design of an avionics for mini rockets.
-## Goals
-- Monitor flight data
-  - Acceleration X,Y,Z
-  - Rotation X,Y,Z
-  - Pressure (for altitude)
-  - Video
-- Separation sequences (separation of stage 2, of nose, ...)
-  - 2-3 Pyro-channels
-  - 2-3 Servos control channels
-  - Electomagnets ?
-  - Valves ?
-## Setup
-On top of an ESP32C3 board connect an **Extension Board**. Both of wich are powered by a mini lithium battery. Other battery for igniter (min 1.5v)
-## Extension board for ESP32C3 (Micro Controler = µC)
-- Connect all the ports from the ESP to the extension board (with pin header ?)
-- LED connected to a random port for test (BLINK - also allows to see if µC bugging or lagging)
-- Communication I2C with µC
-- Battery powered. Option ot charge just before launch (batery pack, umbilical external connector)?
-- Switch to turn ON and OFF ? Access from outside the rocket.
+# 9 outputs and 2 inputs
 
-## Ideas
-- Monitor battery voltage (voltage divider bridge with 2x 100 kohm)
-- Connexion for igniter of separation system
-  - Know if an igniter is connected or not (VCC to Igniter to Transistor - connexion to GND with 1 mohm and connexion to I/O with 100 kohm)
-- Strong connector to avoid unwanted disconnection
+ACT4088 like in bioreactor:
 
-## Reference
+Power supply
 
-### Components and features:
+- LMR50410-Q1
+- https://www.ti.com/lit/ds/symlink/lmr50410-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1698122939216&ref_url=https%253A%252F%252Fwww.mouser.ch%252F
 
-- ESP32C3 from seeed https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
-![](images/ESP32-C3_pin_map-2.png)
-- Accelererometer GY521, MPU6050:
-  - https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
-  - https://parsippany.vidyalaya.org/fut102-gy521.pdf
-- Power switch for igniter: ZXMS6004FF
-  - https://www.diodes.com/assets/Datasheets/ZXMS6004FF.pdf
-- Barometric pressure sensor: MS5637
-  - https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FMS5637-02BA03%7FB1%7Fpdf%7FEnglish%7FENG_DS_MS5637-02BA03_B1.pdf%7FCAT-BLPS0037
-- pins to connect servo
-- pins for testing
+SO-8
 
-### ESP32 C3 pin mapping
+- https://www.diodes.com/assets/Datasheets/AP64100Q.pdf - 10 external components
+- https://www.diodes.com/assets/Datasheets/AP64202Q.pdf - 7 external components
+- https://www.mouser.ch/datasheet/2/389/l6982-2303627.pdf - 7 external components
 
-```
-#define D0 2
-#define D1 3
-#define D2 4
-#define D3 5
-#define D4 6
-#define D5 7
-#define D6 21
-#define D6 20
-#define D8 8
-#define D9 9
-#define D9 10
-```
+SOT-89
 
-### Miscelaneous
-
-- I2C protocol: https://en.wikipedia.org/wiki/I%C2%B2C
+- https://www.mouser.ch/datasheet/2/294/NJW4132_E-1917720.pdf - NJW4132
