@@ -14,6 +14,12 @@
 
 #define PARAM_TIMEOUT 9  // J
 
+#define PARAM_INPUT_1 10  // K
+#define PARAM_INPUT_2 11  // L
+
+#define PARAM_TIMER 12          // M
+#define PARAM_CURRENT_TIMER 13  // N
+
 #define PARAM_UPTIME_H 20           // U
 #define PARAM_STATUS 21             // V
 #define PARAM_INT_TEMPERATURE_B 22  // W

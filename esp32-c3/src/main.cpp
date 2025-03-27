@@ -6,6 +6,8 @@ SemaphoreHandle_t xSemaphoreWire = xSemaphoreCreateBinary();
 void taskBlink();
 void taskSerial();
 void taskOutput();
+void taskInput();
+void taskTimer();
 void taskBluetooth();
 void taskOneWire();
 void taskForecast();
@@ -36,16 +38,21 @@ void setup() {
   //  taskServo();
   //   taskSi7021();
 
-  // taskOTA();
+  taskOTA();
   // taskMDNS();  // incompatible with taskOTA
-  taskWifi();
-  // taskWifiAP();
+  if (false) {
+    taskWifi();
+  } else {
+    taskWifiAP();
+  }
   taskWebserver();
 #ifdef THR_FORECAST
   taskForecast();
 #endif
 
   taskOutput();
+  taskInput();
+  taskTimer();
 
   // taskMQTT();
   // taskOneWire();

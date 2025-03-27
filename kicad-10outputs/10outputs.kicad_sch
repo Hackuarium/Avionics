@@ -2906,7 +2906,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid d192c122-2689-4f00-8477-01527b6defde)
     (property "Reference" "R1" (id 0) (at 109.22 76.2 90))
-    (property "Value" "3k" (id 1) (at 109.22 78.74 90))
+    (property "Value" "1k" (id 1) (at 109.22 78.74 90))
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (id 2) (at 109.22 84.328 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2966,8 +2966,8 @@
   (symbol (lib_id "Device:R") (at 83.82 82.55 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e3c4a5c0-6a22-4316-8c8d-e2edf7314b52)
-    (property "Reference" "1k1" (id 0) (at 83.82 76.2 90))
-    (property "Value" "R" (id 1) (at 83.82 78.74 90))
+    (property "Reference" "R2" (id 0) (at 83.82 76.2 90))
+    (property "Value" "R2" (id 1) (at 83.82 78.74 90))
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (id 2) (at 83.82 84.328 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3098,9 +3098,6 @@
     (path "/a1c56848-45da-466d-b411-5fdb1288dc97"
       (reference "#PWR0124") (unit 1) (value "+3.3V") (footprint "")
     )
-    (path "/e3c4a5c0-6a22-4316-8c8d-e2edf7314b52"
-      (reference "1k1") (unit 1) (value "R") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
-    )
     (path "/308b40b6-6a8d-4fcf-8b19-b462d3a7d546"
       (reference "10nF1") (unit 1) (value "C") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
@@ -3177,7 +3174,10 @@
       (reference "Q10") (unit 1) (value "BSP75N") (footprint "Package_TO_SOT_SMD:SOT-223")
     )
     (path "/d192c122-2689-4f00-8477-01527b6defde"
-      (reference "R1") (unit 1) (value "3k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+      (reference "R1") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+    )
+    (path "/e3c4a5c0-6a22-4316-8c8d-e2edf7314b52"
+      (reference "R2") (unit 1) (value "R2") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/c8bc6c7a-10f0-42f1-abdd-c4ff03a9c06a"
       (reference "U1") (unit 1) (value "LM2596S-ADJ") (footprint "Package_TO_SOT_SMD:TO-263-5_TabPin3")

@@ -117,7 +117,7 @@
 
 
   async function changeAllColors(value, letter) {
-    sendSlowlyCommand(letter + colorHexTo12(value) + ',' + colorHexTo12(value) + ',' + colorHexTo12(value) + ',' + colorHexTo12(value) + colorHexTo12(value) + ',' + colorHexTo12(value) + ',' + colorHexTo12(value) + ',' + colorHexTo12(value));
+    sendSlowlyCommand(letter + colorHexTo12(value) + ',' + colorHexTo12(value) + ',' + colorHexTo12(value) + ',' + colorHexTo12(value) + ',' + colorHexTo12(value) + ',' + colorHexTo12(value) + ',' + colorHexTo12(value) + ',' + colorHexTo12(value));
     await delay(250);
     reloadSettings();
   }

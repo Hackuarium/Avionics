@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "kpjx")(type "KiCad")(uri "${KIPRJMOD}/footprints.pretty")(options "")(descr ""))
+  (lib (name "SolderPads")(type "KiCad")(uri "${KIPRJMOD}/footprints.pretty/SolderPads.pretty")(options "")(descr ""))
+  (lib (name "BuckAliexpress")(type "KiCad")(uri "${KIPRJMOD}/footprints.pretty/BuckAliexpress.pretty")(options "")(descr ""))
+)

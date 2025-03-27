@@ -1,7 +1,7 @@
 // we use a prefix if the parameters do not start at 'A' but at 'BA' for example.
 
-const server = "http://192.168.1.160/";
-//const server = "";
+//const server = "http://192.168.1.162/";
+const server = "";
 let servers = [server];
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams && urlParams.get("servers")) {
@@ -215,7 +215,8 @@ function addColorModelsButtons(models) {
   }
 }
 
-function addColorModelsButtonsRGB(models) {
+function addColorModelsButtonsRGB(models, options = {}) {
+  const { channels = ["A", "I", "Q"] } = options;
   const modelsElement = document.getElementById("models");
   if (!models || !modelsElement) return;
   for (const model of models) {
@@ -227,9 +228,9 @@ function addColorModelsButtonsRGB(models) {
       "linear-gradient(to right, " + colors + ")"
     );
     button.onmousedown = async () => {
-      await sendCommand(prefix + "A" + model.join(","));
-      await sendCommand(prefix + "I" + model.join(","));
-      await sendCommand(prefix + "Q" + model.join(","));
+      for (const channel of channels) {
+        await sendCommand(prefix + channel + model.join(","));
+      }
       await reloadSettings();
     };
     modelsElement.append(button);
